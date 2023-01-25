@@ -27,5 +27,24 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #F9FAFC;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+div.root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+main.project-container {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  background-color: #ffffff;
+  height: 100vh;
+  max-height: 720px;
+  border: 1px solid #EFEFEF;
+  display: flex;
+  overflow: hidden;
 }
