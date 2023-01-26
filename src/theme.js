@@ -3,6 +3,7 @@ export const themes = {
     font: {
       size: {
         small: 13,
+        middle: 14,
         default: 16,
       },
     },
