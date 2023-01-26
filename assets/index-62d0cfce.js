@@ -111,18 +111,18 @@ Error generating stack: `+l.message+`
   background-position: center;
   background-repeat: no-repeat;
 `;function Bg({file:e}){return U(Ug,{file:e})}const Hg=be.div`
-    margin-top: ${({theme:e})=>e.gutter.default/2}px;
-    margin-bottom: ${({theme:e})=>e.gutter.default*2}px;
+  margin-top: ${({theme:e})=>e.gutter.default/2}px;
+  margin-bottom: ${({theme:e})=>e.gutter.default*2}px;
 `,Vg=be.p`
-    margin: 0;
-    color: ${({theme:e})=>e.colors.gray};
-    font-size: ${({theme:e})=>e.font.size.small}px;
-    line-height: 1.4;
-    
-    & strong {
-        color: ${({theme:e})=>e.colors.black};
-        font-size: ${({theme:e})=>e.font.size.default}px;
-    }
+  margin: 0;
+  color: ${({theme:e})=>e.colors.gray};
+  font-size: ${({theme:e})=>e.font.size.small}px;
+  line-height: 1.4;
+
+  & strong {
+    color: ${({theme:e})=>e.colors.black};
+    font-size: ${({theme:e})=>e.font.size.default}px;
+  }
 `;function Wg(){return U("div",{children:U(Qg,{})})}function Qg(){return U(Hg,{children:gt(os,{justify:"space-between",children:[gt(Vg,{children:["Bem vindo de volta, ",U("br",{}),U("strong",{children:"Tatiane Alvarenga"})]}),U(Bg,{file:"/static/avatar.png"})]})})}const Kg=be.div`
   display: flex;
   justify-content: space-between;
