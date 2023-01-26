@@ -9,7 +9,7 @@ export const StyledTransactionsRecentTitle = styled.div`
   & h4,
   h5 {
     color: ${({ theme }) => theme.colors.black};
-    font-size: ${({ theme }) => theme.font.size.default}px;
+    font-size: ${({ theme }) => theme.font.size.middle}px;
     font-weight: 600;
     line-height: 18px;
   }
