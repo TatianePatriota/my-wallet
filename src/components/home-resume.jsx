@@ -21,6 +21,7 @@ function HomeResumeHeader() {
           Bem vindo de volta, <br />
           <strong>Tatiane Alvarenga</strong>
         </StyledHomeResumeHeaderTitle>
+
         <Avatar file="/static/avatar.png" />
       </Box>
     </StyledHomeResumeHeader>
