@@ -132,7 +132,7 @@ Error generating stack: `+l.message+`
   & h4,
   h5 {
     color: ${({theme:e})=>e.colors.black};
-    font-size: ${({theme:e})=>e.font.size.default}px;
+    font-size: ${({theme:e})=>e.font.size.middle}px;
     font-weight: 600;
     line-height: 18px;
   }
@@ -169,7 +169,7 @@ Error generating stack: `+l.message+`
   flex: 1;
 
   & h4 {
-    font-size: ${({theme:e})=>e.font.size.small}px;
+    font-size: ${({theme:e})=>e.font.size.middle}px;
     font-weight: 600;
     margin: 0;
     line-height: 18px;
@@ -179,7 +179,7 @@ Error generating stack: `+l.message+`
   & h4 {
     color: ${({theme:e})=>e.colors.red};
     font-weight: 600;
-    font-size: ${({theme:e})=>e.font.size.small}px;
+    font-size: ${({theme:e})=>e.font.size.middle}px;
     margin: 0;
     line-height: 18px;
   }
