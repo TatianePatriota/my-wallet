@@ -34,7 +34,7 @@ export default createBrowserRouter([
     element: <Transactions />,
   },
   {
-    path: "/",
+    path: "/notifications",
     element: <Notifications />,
   },
 ]);
