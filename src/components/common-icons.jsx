@@ -120,3 +120,55 @@ export function NotificationIcon() {
     </svg>
   );
 }
+
+export function HomeBalanceIcon() {
+  return (
+    <svg
+      width="325"
+      height="187"
+      viewBox="0 0 325 187"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <StyledIconPath
+        opacity="0.1"
+        d="M109.5 143.963C51.9833 140.097 10 165.114 0 176.476L7.5 186.439H28H313.5L324 39.0854C327.333 22.6545 301.16 -11.1626 299.5 5.00001C296 39.0853 274 90.4756 247.5 109.354C224.963 125.409 187.5 149.207 109.5 143.963Z"
+        fill="url(#paint0_linear_1_65)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1_65"
+          x1="299.5"
+          y1="16.0122"
+          x2="-0.921096"
+          y2="166.774"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0.5" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+
+export function HomeBalanceIconEllipse() {
+  return (
+    <svg
+      width="60"
+      height="64"
+      viewBox="0 0 60 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse
+        opacity="0.05"
+        cx="30"
+        cy="32.0732"
+        rx="30"
+        ry="31.4634"
+        fill="white"
+      />
+    </svg>
+  );
+}

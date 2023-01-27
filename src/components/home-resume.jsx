@@ -2,11 +2,17 @@ import { moneyFormatter } from "../formatters/number-formatter";
 import { getBalance } from "../services/transactions-service";
 import { Avatar } from "./common-avatar";
 import { Box } from "./common-box";
-import { NotificationIcon } from "./common-icons";
+import {
+  HomeBalanceIcon,
+  HomeBalanceIconEllipse,
+  NotificationIcon,
+} from "./common-icons";
 import {
   StyledHomeResumeHeader,
   StyledHomeResumeHeaderTitle,
-  StyledHomeRsumeBalance,
+  StyledHomeResumeIcon,
+  StyledHomeResumeIconEllipse,
+  StyledHomeResumeBalance,
 } from "./home-resume.styled";
 
 export function HomeResume() {
@@ -21,10 +27,16 @@ export function HomeResume() {
 function HomeResumeBalance() {
   const balance = getBalance();
   return (
-    <StyledHomeRsumeBalance>
+    <StyledHomeResumeBalance>
       <h2>Balanço</h2>
       <h1>{moneyFormatter(balance)}</h1>
-    </StyledHomeRsumeBalance>
+      <StyledHomeResumeIconEllipse>
+        <HomeBalanceIconEllipse />
+      </StyledHomeResumeIconEllipse>
+      <StyledHomeResumeIcon>
+        <HomeBalanceIcon />
+      </StyledHomeResumeIcon>
+    </StyledHomeResumeBalance>
   );
 }
 
@@ -36,7 +48,7 @@ function HomeResumeHeader() {
           Bem vindo de volta, <br />
           <strong>Tatiane Alvarenga</strong>
         </StyledHomeResumeHeaderTitle>
-        <NotificationIcon />
+        <NotificationIcon to="/notifications" />
         <Avatar file="/static/avatar.png" />
       </Box>
     </StyledHomeResumeHeader>
