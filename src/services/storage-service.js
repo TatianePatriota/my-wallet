@@ -26,7 +26,7 @@ export function localStorageService() {
 
   function set(itemName, item) {
     if (typeof item !== "object") {
-      throw new Error("Saved data should be a valid object");
+      throw new Error("Dado a salvar precisa ser um objeto válido");
     }
     localStorage.setItem(itemName, JSON.stringify(item));
   }
@@ -39,7 +39,7 @@ export function localStorageService() {
 
       if (arr === null) {
         throw new Error(
-          "List should be initialized before increment a new item"
+          "Lista precisa estar inicializada para adicionar um novo item"
         );
       }
 
@@ -50,7 +50,7 @@ export function localStorageService() {
 
       if (arr === null) {
         throw new Error(
-          "List should be initialized before increment a new item"
+          "Lista precisa estar inicializada para remover um item"
         );
       }
 
