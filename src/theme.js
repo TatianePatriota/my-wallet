@@ -8,9 +8,12 @@ export const themes = {
       },
     },
     gutter: {
+      large: 32,
       default: 24,
+      small: 18
     },
     colors: {
+      white: '#FFFFFF',
       black: "#222222",
       gray: "#AEAFAE",
       grayDark: "#CBCBDD",

@@ -1,15 +1,29 @@
+import { moneyFormatter } from "../formatters/number-formatter";
+import { getBalance } from "../services/transactions-service";
 import { Avatar } from "./common-avatar";
 import { Box } from "./common-box";
 import {
   StyledHomeResumeHeader,
   StyledHomeResumeHeaderTitle,
+  StyledHomeRsumeBalance,
 } from "./home-resume.styled";
 
 export function HomeResume() {
   return (
     <div>
       <HomeResumeHeader />
+      <HomeResumeBalance />
     </div>
+  );
+}
+
+function HomeResumeBalance() {
+  const balance = getBalance();
+  return (
+    <StyledHomeRsumeBalance>
+      <h2>Balanço</h2>
+      <h1>{moneyFormatter(balance)}</h1>
+    </StyledHomeRsumeBalance>
   );
 }
 

@@ -1,24 +1,46 @@
 import styled from "styled-components";
 
-export const StyledCard = styled.div`
-  width: 100%;
-`;
+export const StyledTransactionTitle = styled.p`
+  font-size: ${({ theme }) => theme.font.size.middle}px;
+  font-weight: 600;
+  line-height: 1;
 
-export const StyledTransactionsRecents = styled.div`
+  color: ${({ theme, status, color }) => {
+    if (status) {
+      return theme.colors[status === '-' ? 'red' : status === '+' ? 'green' : 'black']
+    }
+    return theme.colors[color ?? 'black']
+  }};
+  `
+
+export const StyledTransactionDescription = styled.small`
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.gray};
+  font-size: ${({ theme }) => theme.font.size.small}px;
+  line-height: 1;
+  `
+
+export const StyledCommonCard = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.lightGray};
-  padding-top: 18px;
-  margin-left: 14px;
-  margin-right: 14px;
-  padding-bottom: 18px;
 
-  & span {
-    font-weight: 400;
-    color: ${({ theme }) => theme.colors.gray};
-    font-size: ${({ theme }) => theme.font.size.small}px;
-    line-height: 16px;
+  & div + div {
+    flex: 1;
+  }
+
+  & div:last-child {
+    text-align: end;
+    flex: inherit;
+  }
+
+  & + & {
+    border-top: 1px solid ${({ theme }) => theme.colors.lightGray};
+    padding-top: ${({ theme }) => theme.gutter.small}px;
+    margin-top: ${({ theme }) => theme.gutter.small}px;
+  }
+
+  & p, & span {
+    margin: 0;
   }
 `;
 
@@ -31,30 +53,9 @@ export const StyledTransactionsRecentsIcons = styled.div`
   margin-right: 12px;
 `;
 
-export const StyledCommonCardAccounts = styled.div`
-  flex: 1;
-
-  & h4 {
-    font-size: ${({ theme }) => theme.font.size.middle}px;
-    font-weight: 600;
-    margin: 0;
-    line-height: 18px;
-  }
-`;
-
-export const StyledTransactionsRecentsValues = styled.div`
-  text-align: end;
-  & h4 {
-    color: ${({ theme }) => theme.colors.red};
-    font-weight: 600;
-    font-size: ${({ theme }) => theme.font.size.middle}px;
-    margin: 0;
-    line-height: 18px;
-  }
-`;
-
 export const StyledTransactionsRecentsCard = styled.section`
   background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+  padding: ${({ theme }) => theme.gutter.small}px;
 `;

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { LayoutWithBottonNavigation } from "./layouts/with-bottom-navigation";
 import { Home } from "./routes/home";
+import { Transactions } from "./routes/transactions";
 
 function CommingSoon() {
   return (
@@ -26,5 +27,9 @@ export default createBrowserRouter([
   {
     path: "/perfil",
     element: <CommingSoon />,
+  },
+  {
+    path: "/todas-as-transacoes",
+    element: <Transactions />,
   },
 ]);

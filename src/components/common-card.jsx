@@ -1,23 +1,48 @@
+import { moneyFormatter } from "../formatters/number-formatter";
 import {
-  StyledCommonCardAccounts,
-  StyledTransactionsRecents,
+  StyledCommonCard,
   StyledTransactionsRecentsIcons,
-  StyledTransactionsRecentsValues,
+  StyledTransactionTitle,
+  StyledTransactionDescription,
 } from "./common-card.styled";
-import { AccountsIcon } from "./common-icons";
 
-export function CommonCard() {
+export function CommonCard({ transaction }) {
   return (
-    <StyledTransactionsRecents>
-      <StyledTransactionsRecentsIcons></StyledTransactionsRecentsIcons>
-      <StyledCommonCardAccounts>
-        <h4>Dropbox</h4>
-        <span>Assinatura</span>
-      </StyledCommonCardAccounts>
-      <StyledTransactionsRecentsValues>
-        <h4>Valor</h4>
-        <span>vencimento</span>
-      </StyledTransactionsRecentsValues>
-    </StyledTransactionsRecents>
+    <StyledCommonCard>
+      <StyledTransactionsRecentsIcons />
+      <div>
+        <StyledTransactionTitle>{transaction.title}</StyledTransactionTitle>
+        <StyledTransactionDescription>
+          {transaction.description}
+        </StyledTransactionDescription>
+      </div>
+
+      <div>
+        <StyledTransactionTitle status={transactionStatus(transaction)}>
+          {transactionStatus(transaction)} {moneyFormatter(transaction.value)}
+        </StyledTransactionTitle>
+        <StyledTransactionDescription>
+          {valueDate(transaction)}
+        </StyledTransactionDescription>
+      </div>
+    </StyledCommonCard>
   );
 }
+
+const transactionStatus = (transaction) => {
+  if (transaction.invoicedAt) {
+    return "-";
+  }
+  if (transaction.receivedAt) {
+    return "+";
+  }
+};
+
+const valueDate = (transaction) => {
+  if (transaction.invoicedAt) {
+    return transaction.invoicedAt;
+  }
+  if (transaction.receivedAt) {
+    return transaction.receivedAt;
+  }
+};
