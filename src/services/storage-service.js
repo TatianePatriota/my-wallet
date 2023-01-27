@@ -28,10 +28,7 @@ export function localStorageService() {
     if (typeof item !== "object") {
       throw new Error("Saved data should be a valid object");
     }
-    localStorage.setItem(
-      itemName,
-      JSON.stringify({ ...item, id: registerId() })
-    );
+    localStorage.setItem(itemName, JSON.stringify(item));
   }
 
   return {
