@@ -1,4 +1,3 @@
-import { LayoutWithBottonNavigation } from "../layouts/with-bottom-navigation";
 import { TransactionsList } from "../components/transactions-list";
 import { getAllTransactions } from "../services/transactions-service";
 import { LayoutWithoutBottomNavigation } from "../layouts/without-bottom-navigation";
