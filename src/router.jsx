@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { LayoutWithBottonNavigation } from "./layouts/with-bottom-navigation";
 import { Home } from "./routes/home";
+import { Notifications } from "./routes/notifications";
 import { Transactions } from "./routes/transactions";
 
 function CommingSoon() {
@@ -31,5 +32,9 @@ export default createBrowserRouter([
   {
     path: "/todas-as-transacoes",
     element: <Transactions />,
+  },
+  {
+    path: "/notifications",
+    element: <Notifications />,
   },
 ]);
