@@ -9,6 +9,7 @@ const StyledAvatar = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: 20px;
 `;
 
 export function Avatar({ file }) {
