@@ -129,6 +129,7 @@ Error generating stack: `+l.message+`
   color: ${({theme:e})=>e.colors.gray};
   font-size: ${({theme:e})=>e.font.size.small}px;
   line-height: 1.4;
+  flex: 1;
 
   & strong {
     color: ${({theme:e})=>e.colors.black};
@@ -136,8 +137,11 @@ Error generating stack: `+l.message+`
   }
 `,rg=Ve.div`
   background-color: ${({theme:e})=>e.colors.primary};
-  padding: ${({theme:e})=>e.gutter.large}px ${({theme:e})=>e.gutter.small}px ${({theme:e})=>e.gutter.small}px;
-  margin: ${({theme:e})=>e.gutter.large}px ${({theme:e})=>e.gutter.default}px;
+  padding: ${({theme:e})=>e.gutter.large}px
+    ${({theme:e})=>e.gutter.small}px
+    ${({theme:e})=>e.gutter.small}px;
+  margin: ${({theme:e})=>e.gutter.large}px
+    ${({theme:e})=>e.gutter.default}px;
   border-radius: 8px;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
   color: ${({theme:e})=>e.colors.white};
