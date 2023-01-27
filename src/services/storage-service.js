@@ -43,7 +43,7 @@ export function localStorageService() {
         );
       }
 
-      return set(itemName, [...arr, value]);
+      return set(itemName, [...arr, { ...value, id: registerId() }]);
     },
     decrement(itemName, id) {
       const arr = get(itemName);
