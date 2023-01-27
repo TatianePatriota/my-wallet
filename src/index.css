@@ -11,7 +11,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,strong,i,span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+span {
   line-height: 1.35;
 }
 
@@ -19,15 +29,17 @@ a {
   text-decoration: inherit;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #F9FAFC;
-  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f9fafc;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 div.root {
@@ -43,7 +55,7 @@ main.project-container {
   background-color: #ffffff;
   height: 100vh;
   max-height: 720px;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   display: flex;
   overflow: hidden;
 }
