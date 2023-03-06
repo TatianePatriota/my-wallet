@@ -1,13 +1,13 @@
 import { TransactionsList } from "../components/transactions-list";
 import { getAllTransactions } from "../services/transactions-service";
-import { LayoutWithoutBottomNavigation } from "../layouts/without-bottom-navigation";
+import { LayoutWithBottonNavigation } from "../layouts/with-bottom-navigation";
 
 export function Transactions() {
   const data = getAllTransactions();
 
   return (
-    <LayoutWithoutBottomNavigation>
+    <LayoutWithBottonNavigation>
       <TransactionsList title="Todas as transações" items={data} />
-    </LayoutWithoutBottomNavigation>
+    </LayoutWithBottonNavigation>
   );
 }
