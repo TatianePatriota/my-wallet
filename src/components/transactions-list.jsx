@@ -21,7 +21,7 @@ export function TransactionsList({ items, title, seeAll }) {
       <StyledTransactionsRecentTitle>
         <h4>{title}</h4>
         {seeAll && (
-          <a className="seeAll" href="/todas-as-transacoes">
+          <a className="seeAll" href="/relatorios">
             Veja tudo
           </a>
         )}
