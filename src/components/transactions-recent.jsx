@@ -1,9 +1,3 @@
-import {
-  StyledTransactionsRecent,
-  StyledTransactionsRecentTitle,
-} from "./transactions-recent.styled";
-import { StyledTransactionsRecentsCard } from "./common-card.styled";
-import { CommonCard } from "./common-card";
 import { getRecentTransactions } from "../services/transactions-service";
 import { TransactionsList } from "./transactions-list";
 
