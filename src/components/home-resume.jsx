@@ -2,11 +2,7 @@ import { moneyFormatter } from "../formatters/number-formatter";
 import { getBalance } from "../services/transactions-service";
 import { Avatar } from "./common-avatar";
 import { Box } from "./common-box";
-import {
-  HomeBalanceIcon,
-  HomeBalanceIconEllipse,
-  NotificationIcon,
-} from "./common-icons";
+import { HomeBalanceIcon, HomeBalanceIconEllipse } from "./common-icons";
 import {
   StyledHomeResumeHeader,
   StyledHomeResumeHeaderTitle,
@@ -48,7 +44,6 @@ function HomeResumeHeader() {
           Bem vindo de volta, <br />
           <strong>Tatiane Alvarenga</strong>
         </StyledHomeResumeHeaderTitle>
-        <NotificationIcon to="/notifications" />
         <Avatar file="/static/avatar.png" />
       </Box>
     </StyledHomeResumeHeader>
