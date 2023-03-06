@@ -144,8 +144,8 @@ export function HomeBalanceIcon() {
           y2="166.774"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0.5" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0.5" />
         </linearGradient>
       </defs>
     </svg>
