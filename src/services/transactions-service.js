@@ -34,7 +34,7 @@ export function getRecentTransactions() {
 }
 
 export function getAllTransactions() {
-  return [...mockedTransactions, ...mockedTransactions];
+  return mockedTransactions;
 }
 
 export function getBalance() {
