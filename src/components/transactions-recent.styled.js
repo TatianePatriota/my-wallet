@@ -4,7 +4,7 @@ export const StyledTransactionsRecent = styled.div`
   flex: 1;
   padding: ${({ theme }) => theme.gutter.default}px;
   background-color: ${({ theme }) => theme.colors.background};
-`
+`;
 
 export const StyledTransactionsRecentTitle = styled.div`
   display: flex;
