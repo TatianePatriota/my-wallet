@@ -105,21 +105,22 @@ Error generating stack: `+l.message+`
 `;function Zp({children:e,justify:t}){return I(a1,{justify:t,children:e})}const zn=ze.path`
   fill: ${({theme:e,actived:t})=>t?e.colors.primary:e.colors.grayDark};
 `;function u1({actived:e}){return I("svg",{width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:I(zn,{actived:e,d:"M12.514 3.47698C12.153 3.19639 11.6477 3.19639 11.2866 3.47698L4.13632 9.03458C3.89258 9.22403 3.75 9.51543 3.75 9.82413V20C3.75 20.5523 4.19772 21 4.75 21H8.35744C8.90972 21 9.35744 20.5523 9.35744 20V14.9581C9.35744 14.4058 9.80515 13.9581 10.3574 13.9581H13.4432C13.9955 13.9581 14.4432 14.4058 14.4432 14.9581V20C14.4432 20.5523 14.891 21 15.4432 21H19.0507C19.603 21 20.0507 20.5523 20.0507 20V9.82413C20.0507 9.51543 19.9081 9.22403 19.6643 9.03458L12.514 3.47698Z"})})}function s1({actived:e}){return et("svg",{width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:[I(zn,{actived:e,d:"M8.25 4.5C8.25 3.67157 8.92157 3 9.75 3C10.5784 3 11.25 3.67157 11.25 4.5V19.5C11.25 20.3284 10.5784 21 9.75 21C8.92157 21 8.25 20.3284 8.25 19.5V4.5Z"}),I(zn,{actived:e,d:"M3.75 17.25C3.75 16.4216 4.42157 15.75 5.25 15.75C6.07843 15.75 6.75 16.4216 6.75 17.25V19.5C6.75 20.3284 6.07843 21 5.25 21C4.42157 21 3.75 20.3284 3.75 19.5V17.25Z"}),I(zn,{actived:e,d:"M12.75 14.25C12.75 13.4216 13.4216 12.75 14.25 12.75C15.0784 12.75 15.75 13.4216 15.75 14.25V19.5C15.75 20.3284 15.0784 21 14.25 21C13.4216 21 12.75 20.3284 12.75 19.5V14.25Z"}),I(zn,{actived:e,d:"M17.25 9.75C17.25 8.92157 17.9216 8.25 18.75 8.25C19.5784 8.25 20.25 8.92157 20.25 9.75V19.5C20.25 20.3284 19.5784 21 18.75 21C17.9216 21 17.25 20.3284 17.25 19.5V9.75Z"})]})}function c1({actived:e}){return I("svg",{width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:I(zn,{actived:e,d:"M12 12C14.4752 12 16.5 9.97495 16.5 7.5C16.5 5.02505 14.4752 3 12 3C9.52477 3 7.5 5.02505 7.5 7.5C7.5 9.97495 9.52477 12 12 12ZM12 14.25C9.01884 14.25 3 15.7688 3 18.75V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V18.75C21 15.7688 14.9812 14.25 12 14.25Z"})})}function f1(){return et("svg",{width:"325",height:"187",viewBox:"0 0 325 187",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:[I(zn,{opacity:"0.1",d:"M109.5 143.963C51.9833 140.097 10 165.114 0 176.476L7.5 186.439H28H313.5L324 39.0854C327.333 22.6545 301.16 -11.1626 299.5 5.00001C296 39.0853 274 90.4756 247.5 109.354C224.963 125.409 187.5 149.207 109.5 143.963Z",fill:"url(#paint0_linear_1_65)"}),I("defs",{children:et("linearGradient",{id:"paint0_linear_1_65",x1:"299.5",y1:"16.0122",x2:"-0.921096",y2:"166.774",gradientUnits:"userSpaceOnUse",children:[I("stop",{stopColor:"white"}),I("stop",{offset:"1",stopColor:"white",stopOpacity:"0.5"})]})})]})}function d1(){return I("svg",{width:"60",height:"64",viewBox:"0 0 60 64",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:I("ellipse",{opacity:"0.05",cx:"30",cy:"32.0732",rx:"30",ry:"31.4634",fill:"white"})})}const p1=[{to:"/",icon:I(u1,{})},{to:"/relatorios",icon:I(s1,{})},{to:"/perfil",icon:I(c1,{})}];function h1(){return I(i1,{children:I(Zp,{justify:"space-between",children:p1.map((e,t)=>I(m1,{...e},t))})})}function m1({to:e,icon:t}){return I(Fp,{className:({isActive:n})=>n?"active":void 0,to:e,children:t})}const v1=ze.div`
-    flex-direction: column;
-    width: 100%;
-    display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
 `,g1=ze.div`
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 
-    &::-webkit-scrollbar {
-  display: none;
-}
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;ze(Fp)`
-  padding: ${({theme:e})=>e.gutter.default}px ${({theme:e})=>e.gutter.default}px 0;
+  padding: ${({theme:e})=>e.gutter.default}px
+    ${({theme:e})=>e.gutter.default}px 0;
   background-color: ${({theme:e})=>e.colors.background};
 `;function xs({children:e}){return et(v1,{children:[I(g1,{children:e}),I(h1,{})]})}function Jp(e){return new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"}).format(e)}const ca=new Intl.DateTimeFormat("en-GB",{dateStyle:"medium",timeZone:"America/Sao_Paulo"}).format(new Date),qp=[{id:"1",title:"Dropbox",description:"Assinatura anual",value:144,invoicedAt:ca},{id:"22",title:"Spotify",description:"Assinatura mensal",value:24,invoicedAt:ca},{id:"53",title:"Freelancer",description:"Recebimento pontual",value:421,receivedAt:ca}];function y1(){return qp}function w1(){return qp}function S1(){return 6420}const k1=ze.div`
   height: 40px;
