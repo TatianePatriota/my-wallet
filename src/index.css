@@ -57,5 +57,5 @@ main.project-container {
   max-height: 720px;
   border: 1px solid #efefef;
   display: flex;
-  overflow: hidden;
+  overflow-y: hidden;
 }
