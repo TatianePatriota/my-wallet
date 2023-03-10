@@ -268,7 +268,7 @@ Error generating stack: `+l.message+`
   background-position: center;
   background-repeat: no-repeat;
 `;function Bg({file:e}){return $(Ug,{file:e})}const Hg=Ee.div`
-  padding-top: 24px;
+  padding-top: 70px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -276,6 +276,7 @@ Error generating stack: `+l.message+`
   justify-content: space-between;
   height: 50vh;
   align-items: center;
+  text-align: center;
 `;function Vg(){return $(xs,{children:ze(Hg,{children:[$(Bg,{file:"/static/tati.jpeg"}),$("h4",{children:"Olá, me chamo Tatiane e sou desenvolvedora Front-end"}),ze("div",{children:[$("a",{href:"https://www.linkedin.com/in/tatianepatriota/",children:$(pg,{})}),$("a",{href:"https://github.com/TatianePatriota",children:$(hg,{})})]})]})})}const Wg=Ee.div`
   background-color: ${({theme:e})=>e.colors.primary};
   height: 200px;
