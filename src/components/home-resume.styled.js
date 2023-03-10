@@ -41,7 +41,12 @@ export const StyledHomeResumeBalance = styled.div`
     font-weight: 600;
     font-size: ${({ theme }) => theme.font.size.default}px;
     line-height: 1.5;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  & p {
+    margin-top: 0;
+    font-size: ${({ theme }) => theme.font.size.small}px;
   }
 `;
 
