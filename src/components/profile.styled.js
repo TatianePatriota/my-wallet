@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProfile = styled.div`
-  padding-top: 24px;
+  padding-top: 70px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -9,4 +9,5 @@ export const StyledProfile = styled.div`
   justify-content: space-between;
   height: 50vh;
   align-items: center;
+  text-align: center;
 `;
