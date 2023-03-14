@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledTransactionTitle = styled.p<{ status: string }>`
+export const StyledTransactionTitle = styled.p<{ status?: string }>`
   font-size: ${({ theme }) => theme.font.size.middle}px;
   font-weight: 600;
   line-height: 1;
@@ -54,6 +54,10 @@ export const StyledTransactionsRecentsIcons = styled.div`
   border-radius: 6px;
   text-align: center;
   margin-right: 12px;
+
+  & svg {
+    margin-top: 8px;
+  }
 `;
 
 export const StyledTransactionsRecentsCard = styled.section`
