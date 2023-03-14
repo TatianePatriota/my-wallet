@@ -1,15 +1,21 @@
+import {
+  TransactionIconName,
+  TransactionType,
+} from "../components/common-card";
+
 const today = new Intl.DateTimeFormat("en-GB", {
   dateStyle: "medium",
   timeZone: "America/Sao_Paulo",
 }).format(new Date());
 
-const mockedTransactions = [
+const mockedTransactions: TransactionType[] = [
   {
     id: "1",
     title: "Dropbox",
     description: "Assinatura anual",
     value: 144.0,
     invoicedAt: today,
+    iconName: TransactionIconName.Dropbox,
   },
   {
     id: "22",
@@ -17,6 +23,7 @@ const mockedTransactions = [
     description: "Assinatura mensal",
     value: 24.0,
     invoicedAt: today,
+    iconName: TransactionIconName.Spotify,
   },
   {
     id: "53",
@@ -24,6 +31,7 @@ const mockedTransactions = [
     description: "Recebimento pontual",
     value: 421.0,
     receivedAt: today,
+    iconName: TransactionIconName.Freelancer,
   },
 ];
 
