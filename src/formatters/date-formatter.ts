@@ -1,5 +1,6 @@
-const date = new Date(Date.UTC(2022, 3, 13));
-export function GetDate(date: number) {
+export const today = new Date();
+
+export function GetDate(date = today): string {
   return new Intl.DateTimeFormat("pt-BR", {
     dateStyle: "long",
   }).format(date);
