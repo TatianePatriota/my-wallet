@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProfile = styled.div`
-  padding-top: 70px;
+  padding-top: 90px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -11,9 +11,14 @@ export const StyledProfile = styled.div`
   align-items: center;
   text-align: center;
 
+  & h3 {
+    margin-bottom: 0;
+  }
+
   & h4 {
-    font-size: ${({ theme }) => theme.font.size.default}px;
+    font-size: ${({ theme }) => theme.font.size.small}px;
     font-weight: 400;
+    margin-top: 14px;
   }
 
   & p {
