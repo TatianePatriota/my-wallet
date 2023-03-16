@@ -5,14 +5,15 @@ export const StyledHeaderTransactions = styled.div`
   height: 200px;
   padding-left: 24px;
   padding-right: 24px;
+  position: relative;
 
-  & h2 {
+  & h3 {
     margin: 0;
     line-height: 1;
     color: ${({ theme }) => theme.colors.white};
     font-size: ${({ theme }) => theme.gutter.small}px;
     font-weight: 400;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 15px;
   }
 
@@ -21,8 +22,16 @@ export const StyledHeaderTransactions = styled.div`
     color: ${({ theme }) => theme.colors.white};
     font-weight: 400;
     font-size: ${({ theme }) => theme.font.size.middle}px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+  }
+
+  & h2 {
+    color: ${({ theme }) => theme.colors.white};
+    font-weight: 600;
+    font-size: ${({ theme }) => theme.font.size.default * 2} px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+    margin-top: 0;
+    padding-bottom: 14px;
   }
 `;
 
