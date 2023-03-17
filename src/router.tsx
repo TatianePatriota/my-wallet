@@ -9,10 +9,6 @@ export default createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/relatorios",
-    element: <Transactions />,
-  },
-  {
     path: "/perfil",
     element: <Profile />,
   },
