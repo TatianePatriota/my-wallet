@@ -6,7 +6,7 @@ import { HomeIcon, ProfileIcon, StatsIcon } from "./common-icons";
 
 const bottomNavigationRoutes = [
   { to: "/", icon: <HomeIcon /> },
-  { to: "/relatorios", icon: <StatsIcon /> },
+  { to: "/todas-as-transacoes", icon: <StatsIcon /> },
   { to: "/perfil", icon: <ProfileIcon /> },
 ];
 
