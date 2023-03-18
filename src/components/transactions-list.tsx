@@ -8,7 +8,7 @@ import { CommonCard, TransactionType } from "./common-card";
 export type TrasactionPropsType = {
   items: TransactionType[];
   title: string;
-  seeAll: boolean;
+  seeAll?: boolean;
 };
 
 export function TransactionsList({
@@ -31,7 +31,7 @@ export function TransactionsList({
       <StyledTransactionsRecentTitle>
         <h4>{title}</h4>
         {seeAll && (
-          <a className="seeAll" href="/relatorios">
+          <a className="seeAll" href="/todas-as-transacoes">
             Veja tudo
           </a>
         )}
