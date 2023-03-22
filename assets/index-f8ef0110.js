@@ -234,18 +234,19 @@ Error generating stack: `+l.message+`
     }
   }
 `;function eh({items:e,title:t,seeAll:n}){return!e||!e.length?R(hf,{children:R(mf,{children:R("h4",{children:"Nada pra ver."})})}):we(hf,{children:[we(mf,{children:[R("h4",{children:t}),n&&R("a",{className:"seeAll",href:"/todas-as-transacoes",children:"Veja tudo"})]}),R(cv,{children:e.map(r=>R(xv,{transaction:r},r.id))})]})}function jv(){const e=Ev();return R(eh,{title:"Transações recentes",items:e,seeAll:!0})}const Uv=Se.div`
-    background-color: white;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  box-shadow: 0px -2px 30px rgba(0, 0, 0, 0.07);
 
-    & path {
-        transition:  all 0.2s ease-in-out;
-    }
+  & path {
+    transition: all 0.2s ease-in-out;
+  }
 
-    & a.active path, & a:hover path {
-        fill: ${({theme:e})=>e.colors.primary}
-    }
+  & a.active path,
+  & a:hover path {
+    fill: ${({theme:e})=>e.colors.primary};
+  }
 `,Bv=[{to:"/",icon:R(fv,{})},{to:"/todas-as-transacoes",icon:R(dv,{})},{to:"/perfil",icon:R(pv,{})}];function Hv(){return R(Uv,{children:R(bp,{justify:"space-between",children:Bv.map((e,t)=>R(Vv,{...e},t))})})}function Vv({to:e,icon:t}){return R(jp,{className:({isActive:n})=>n?"active":void 0,to:e,children:t})}const Wv=Se.div`
   flex-direction: column;
   width: 100%;
