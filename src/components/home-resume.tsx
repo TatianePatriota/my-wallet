@@ -12,7 +12,7 @@ import {
   StyledHomeResumeBalance,
 } from "./home-resume.styled";
 
-export function HomeResume() {
+export function HomeResume(): JSX.Element {
   return (
     <div>
       <HomeResumeHeader />
