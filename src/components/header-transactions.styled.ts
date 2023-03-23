@@ -20,8 +20,8 @@ export const StyledHeaderTransactions = styled.div`
   & p {
     line-height: 18px;
     color: ${({ theme }) => theme.colors.white};
-    font-weight: 400;
-    font-size: ${({ theme }) => theme.font.size.middle}px;
+    font-weight: 600;
+    font-size: ${({ theme }) => theme.font.size.default}px;
     /* padding-bottom: 10px; */
   }
 
