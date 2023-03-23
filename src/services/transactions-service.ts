@@ -52,5 +52,3 @@ export function getBalance() {
     .reduce((old, current) => old + current.value, 0);
   return receivedAmount - invoicedAmount;
 }
-
-console.log(getBalance());
