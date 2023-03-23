@@ -3,8 +3,8 @@ import {
   TransactionType,
 } from "../components/common-card";
 
-const today = new Intl.DateTimeFormat("en-GB", {
-  dateStyle: "medium",
+const today = new Intl.DateTimeFormat("pt-Br", {
+  dateStyle: "short",
   timeZone: "America/Sao_Paulo",
 }).format(new Date());
 
@@ -29,7 +29,7 @@ const mockedTransactions: TransactionType[] = [
     id: "53",
     title: "Freelancer",
     description: "Recebimento pontual",
-    value: 421.0,
+    value: 2200.0,
     receivedAt: today,
     iconName: TransactionIconName.Freelancer,
   },
