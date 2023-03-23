@@ -318,8 +318,8 @@ Error generating stack: `+i.message+`
   & p {
     line-height: 18px;
     color: ${({theme:e})=>e.colors.white};
-    font-weight: 400;
-    font-size: ${({theme:e})=>e.font.size.middle}px;
+    font-weight: 600;
+    font-size: ${({theme:e})=>e.font.size.default}px;
     /* padding-bottom: 10px; */
   }
 
