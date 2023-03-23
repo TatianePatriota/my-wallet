@@ -18,7 +18,7 @@ export function Transactions(): JSX.Element {
       <StyledHeaderTransactions>
         <HeaderTransactions
           title=" Entradas e Saídas"
-          description="Balanço total"
+          description="Balanço"
           balanceSheet={moneyFormatter(balance)}
         />
         <IconWave file="/static/iconwave.png" />
