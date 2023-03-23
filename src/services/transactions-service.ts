@@ -44,5 +44,13 @@ export function getAllTransactions() {
 }
 
 export function getBalance() {
-  return 6420.0;
+  const receivedAmount = mockedTransactions
+    .filter((t) => t.receivedAt)
+    .reduce((old, current) => old + current.value, 0);
+  const invoicedAmount = mockedTransactions
+    .filter((t) => t.invoicedAt)
+    .reduce((old, current) => old + current.value, 0);
+  return receivedAmount - invoicedAmount;
 }
+
+console.log(getBalance());
